@@ -149,17 +149,7 @@ body {
 
 /* ... */
 /* --- Scenario Image --- */
-.scenario-image {
-    width: 100%;
-    height: 200px;
-    /* Significantly reduced from 350px */
-    object-fit: cover;
-    border: 4px solid #1a1a1a;
-    outline: 2px solid var(--brass-dark);
-    filter: sepia(30%) contrast(1.1);
-    margin-bottom: 1rem;
-    display: block;
-}
+
 
 .main-header::before {
     content: '';
@@ -386,8 +376,8 @@ h3 {
 /* --- Scenario Image --- */
 .scenario-image {
     width: 100%;
-    height: 220px;
-    /* Reduced for Compact View */
+    height: 380px;
+    /* Increased to fill available space */
     object-fit: cover;
     border: 4px solid #1a1a1a;
     outline: 2px solid var(--brass-dark);
