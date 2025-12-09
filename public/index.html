@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EconoArena: Kapitalismus 19. století</title>
+    <link rel="stylesheet" href="styles.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto+Mono:wght@400;500&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Header / Mode Switcher -->
+        <header class="main-header">
+            <h1>EconoArena</h1>
+            <nav class="mode-nav">
+                <button class="mode-btn mode-btn--active" id="btn-marx" data-mode="marx">Marx Mode: 1870</button>
+                <button class="mode-btn locked" id="btn-smith" data-mode="smith">Smith Mode: 1776 <span
+                        class="lock-icon">🔒</span></button>
+                <button class="mode-btn locked" id="btn-hayek" data-mode="hayek">Hayek Mode: 1930 <span
+                        class="lock-icon">🔒</span></button>
+                <button class="mode-btn locked" id="btn-keynes" data-mode="keynes">Keynes Mode: 1936 <span
+                        class="lock-icon">🔒</span></button>
+                <button class="mode-btn locked" id="btn-friedman" data-mode="friedman">Friedman Mode: 1970 <span
+                        class="lock-icon">🔒</span></button>
+            </nav>
+        </header>
+
+        <main id="game-view" class="game-view hidden">
+            <!-- Left Column: Pyramid -->
+            <section class="panel pyramid-panel">
+                <h2>
+                    Společenská pyramida
+                    <span class="tooltip-container">
+                        <span class="info-icon">i</span>
+                        <span class="tooltip-text">
+                            Ukazuje spokojenost a sílu jednotlivých tříd.
+                            <br><br>
+                            <strong>Červená:</strong> Nespokojenost/Revoluční nálada<br>
+                            <strong>Zelená:</strong> Stabilita/Podpora systému
+                        </span>
+                    </span>
+                </h2>
+                <div id="pyramid-container" class="pyramid-container">
+                    <!-- Dynamic Pyramid Layers will be injected here -->
+                </div>
+            </section>
+
+            <!-- Center Column: Scenario & Choices -->
+            <section class="panel scenario-panel">
+                <div id="scenario-content">
+                    <img id="scenario-image" src="" alt="Scenario Illustration" class="scenario-image hidden">
+                    <h2 id="scenario-title">Načítání...</h2>
+                    <p id="scenario-year" class="scenario-year"></p>
+                    <p id="scenario-summary" class="scenario-text"></p>
+
+                    <div id="choices-container" class="choices-container">
+                        <!-- Dynamic Choices -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Right Column: Results & Indicators -->
+            <section class="panel results-panel">
+                <div class="indicators-box">
+                    <h3>
+                        Ekonomické indikátory
+                        <span class="tooltip-container">
+                            <span class="info-icon">i</span>
+                            <span class="tooltip-text">
+                                Klíčové metriky vaší ekonomiky:
+                                <br><br>
+                                <strong>Míra zisku:</strong> Motivace pro kapitalisty.<br>
+                                <strong>Třídní napětí:</strong> Riziko revoluce (0-1).<br>
+                                <strong>Nezaměstnanost:</strong> Podíl lidí bez práce.
+                            </span>
+                        </span>
+                    </h3>
+                    <div id="indicators-container" class="indicators-grid">
+                        <!-- Dynamic Indicators -->
+                    </div>
+                </div>
+
+                <div class="commentary-box">
+                    <h3>Pohled školy</h3>
+                    <div class="school-switcher">
+                        <button class="school-btn active" data-view="marx">Marx</button>
+                        <button class="school-btn" data-view="smith">Smith</button>
+                        <button class="school-btn" data-view="hayek">Hayek</button>
+                        <button class="school-btn" data-view="keynes">Keynes</button>
+                        <button class="school-btn" data-view="friedman">Friedman</button>
+                    </div>
+                    <div id="commentary-text" class="commentary-text">
+                        Vyberte scénář a proveďte volbu pro zobrazení komentáře.
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Welcome Screen (Initial State) -->
+        <div id="welcome-screen" class="welcome-screen">
+            <div class="welcome-content">
+                <h2>Vítejte v EconoArena</h2>
+                <p>Simulátor ekonomických rozhodnutí a jejich společenských dopadů.</p>
+                <button id="start-marx-btn" class="btn-primary">Spustit Marx Mode (1870-1900)</button>
+            </div>
+        </div>
+
+        <!-- Game Over Modal (Revolution) -->
+        <div id="game-over-modal" class="modal hidden">
+            <div class="modal-content revolution-theme">
+                <h2>REVOLUCE!</h2>
+                <div class="modal-body">
+                    <p>Třídní napětí dosáhlo kritické hranice (100%).</p>
+                    <p>Proletariát povstal, svrhl vládu buržoazie a vyvlastnil výrobní prostředky.</p>
+                    <p class="final-stat">Vaše hra zde končí.</p>
+                </div>
+                <button id="restart-btn" class="btn-primary btn-danger">Začít znovu</button>
+            </div>
+        </div>
+
+        <!-- Victory Modal (Campaign Complete) -->
+        <div id="victory-modal" class="modal hidden">
+            <div class="modal-content victory-theme">
+                <h2>Éra Dokončena!</h2>
+                <div class="modal-body">
+                    <p>Gratulujeme! Úspěšně jste provedli společnost tímto obdobím bez kolapsu.</p>
+                    <p>Historie se však nezastaví. Nové myšlenky přicházejí...</p>
+                    <p class="final-stat" id="victory-message"></p>
+                </div>
+                <button id="next-campaign-btn" class="btn-primary">Vstoupit do další éry →</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Global JS Tooltip -->
+    <div id="global-tooltip" class="global-tooltip hidden"></div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

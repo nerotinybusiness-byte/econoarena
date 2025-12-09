@@ -1,0 +1,692 @@
+[
+    {
+        "id": "smith-1",
+        "title": "Špendlíková továrna 1776",
+        "year": 1776,
+        "summary": "Máš malou dílnu na výrobu špendlíků. Dělníci dělají všechno sami: drát narovnají, nastříhají, brousí špičku i nasazují hlavičku. Výroba je pomalá.",
+        "learningGoal": "Demonstrace dělby práce a specializace jako zdroje produktivity.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 60,
+            "bourgeoisie": 40,
+            "financeCapital": 30,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.1,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-1a",
+                "label": "Zavést dělbu práce",
+                "description": "Rozdělit proces na 18 operací. Jeden narovnává, druhý stříhá, třetí brousí...",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": 0.20,
+                        "classTension": 0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Dělník se stává pouhým přívěskem stroje. Jeho práce ztrácí smysl a stává se otupující rutinou. Odcizení práce.",
+                        "smith": "Obrovský nárůst produktivity! Kde jeden vyrobil 20 špendlíků, deset jich vyrobí 48 000. Toto je prapůvod bohatství národů.",
+                        "hayek": "Efektivnější využití znalostí a dovedností. Specializace umožňuje lidem dělat to, v čem jsou nejlepší."
+                    }
+                }
+            },
+            {
+                "id": "choice-1b",
+                "label": "Zachovat řemeslnou výrobu",
+                "description": "Každý dělník je hrdý na svůj celkový výrobek. Kvalita je vysoká, ale objem malý.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -5,
+                        "bourgeoisie": -10,
+                        "financeCapital": -5,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Romantická iluze. Kapitalismus nemilosrdně drtí staré formy výroby. Kdo se nepřizpůsobí, zhyne.",
+                        "smith": "Ctnostné, ale neefektivní. Pokud zákazníci chtějí levné špendlíky, konkurence vás zničí.",
+                        "hayek": "Trh rozhodne. Pokud si lidé cení ruční práce více než nízké ceny, přežijete. Ale pravděpodobně ne."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-2",
+        "title": "Cechovní monopoly 1780",
+        "year": 1780,
+        "summary": "Místní cech kovářů brání vstupu nových řemeslníků na trh. Ceny jsou vysoké, inovace žádné. Cechmistři bohatnou, ale město stagnuje.",
+        "learningGoal": "Kritika monopolů a privilegií bránících volnému obchodu.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 80,
+            "bourgeoisie": 30,
+            "financeCapital": 20,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.15,
+            "classTension": 0.3,
+            "unemployment": 0.10
+        },
+        "choices": [
+            {
+                "id": "choice-2a",
+                "label": "Zrušit cechovní privilegia",
+                "description": "Umožnit komukoli otevřít si kovárnu. Volná soutěž.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -30,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.1,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Cechy byly feudální přežitek. Buržoazie potřebuje volný trh práce, aby mohla expandovat. Proletarizace řemeslníků začíná.",
+                        "smith": "Monopoly jsou spiknutím proti veřejnosti za účelem zvýšení cen. Svoboda podnikání přinese nižší ceny a lepší zboží pro všechny.",
+                        "hayek": "Bariéry vstupu poškozují spotřebitele. Konkurence je objevná procedura, která nám ukáže, kdo slouží zákazníkům nejlépe."
+                    }
+                }
+            },
+            {
+                "id": "choice-2b",
+                "label": "Podpořit cech v zájmu 'kvality'",
+                "description": "Udržet přísná pravidla a kontrolu. Stabilita nade vše.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": -10,
+                        "financeCapital": -5,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.10,
+                        "classTension": 0.1,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Konzervace starých pořádků. Brzdí rozvoj výrobních sil.",
+                        "smith": "Lidé stejného řemesla se málokdy sejdou, aniž by to skončilo spiknutím proti veřejnosti. Stát by to neměl podporovat.",
+                        "hayek": "Ochrana speciálních zájmů na úkor celku. Vede ke strnulosti a chudobě."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-3",
+        "title": "Obilné zákony 1815",
+        "year": 1815,
+        "summary": "Landlordi prosadili cla na dovoz levného obilí. Chléb je drahý, dělníci hladoví, ale renty z půdy jsou vysoké. Průmyslníci si stěžují, že musí platit vyšší mzdy na přežití.",
+        "learningGoal": "Spor mezi protekcionismem a volným obchodem.",
+        "pyramidEffects": {
+            "workers": 20,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 70
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.7,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-3a",
+                "label": "Zrušit cla na obilí (Repeal Corn Laws)",
+                "description": "Dovézt levné obilí ze zámoří. Chléb zlevní, renty poklesnou.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 30,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 30,
+                        "financeCapital": 20,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.10,
+                        "classTension": -0.3,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Vítězství průmyslového kapitálu nad pozemkovou aristokracií. Levný chléb znamená, že kapitalisté mohou snížit mzdy.",
+                        "smith": "Pokud cizí země může dodat zboží levněji než my, je lepší ho koupit a věnovat se tomu, v čem jsme dobří my. Volný obchod obohacuje oba.",
+                        "hayek": "Protekcionismus vždy zvýhodňuje úzkou skupinu na úkor všech ostatních. Otevřené hranice zboží zvyšují životní úroveň."
+                    }
+                }
+            },
+            {
+                "id": "choice-3b",
+                "label": "Zachovat cla pro 'potravinovou soběstačnost'",
+                "description": "Podpořit domácí zemědělství i za cenu vyšších cen.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": -10,
+                        "financeCapital": -10,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0.4,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Třídní zájem vlastníků půdy vítězí. Dělníci platí daň ze svého hladu do kapes lordů.",
+                        "smith": "Nutit lidi pěstovat obilí na nevhodné půdě je plýtvání kapitálem společnosti.",
+                        "hayek": "Soběstačnost je ohlupující ideál. Vede k chudobě a izolaci."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-4",
+        "title": "Veřejné práce 1790",
+        "year": 1790,
+        "summary": "Obchod vázne, protože cesty jsou blátivé a přístavy zanesené. Soukromníci nemají kapitál na stavbu velkých kanálů.",
+        "learningGoal": "Role státu v budování infrastruktury podle Smitha.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 50,
+            "financeCapital": 50,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.08,
+            "classTension": 0.1,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-4a",
+                "label": "Stát postaví kanály a silnice",
+                "description": "Investice z daní do veřejných statků, které usnadní obchod všem.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 30,
+                        "financeCapital": 10,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.1,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Stát buduje materiální podmínky pro rychlejší oběh kapitálu. Slouží zájmům buržoazie jako celku.",
+                        "smith": "Třetí povinností panovníka je budovat veřejná díla, která jsou pro společnost užitečná, ale pro jednotlivce by nebyla zisková.",
+                        "hayek": "Stát může poskytovat infrastrukturu, ale neměl by na ní mít monopol. Pozor na neefektivitu a korupci."
+                    }
+                }
+            },
+            {
+                "id": "choice-4b",
+                "label": "Nechat to na soukromé iniciativě",
+                "description": "Mýtné systémy a soukromé cesty. Pokud je poptávka, někdo to postaví.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 0,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 0,
+                        "financeCapital": 20,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Anarchie výroby. Infrastruktura vznikne jen tam, kde to sype, ne tam, kde je potřeba.",
+                        "smith": "Některé věci jsou nad síly jednotlivců. Bez cest nebude trh fungovat efektivně.",
+                        "hayek": "Soukromé dálnice a mosty mohou fungovat lépe, protože majitelé mají motivaci je udržovat. Ale koordinace může být problém."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-5",
+        "title": "Neviditelná ruka 1777",
+        "year": 1777,
+        "summary": "Poptávka po vlně prudce roste, ale farmáři chovají hlavně krávy. Vláda zvažuje, zda nařídit chov ovcí zákonem, aby podpořila textilky.",
+        "learningGoal": "Vysvětlení konceptu neviditelné ruky trhu.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 60,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0.1,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-5a",
+                "label": "Nechat trh, ať se přizpůsobí",
+                "description": "Cena vlny vzroste, což samo motivuje farmáře přejít na chov ovcí.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 0,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.15,
+                        "classTension": 0,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Pohyb cen jen organizuje alokaci práce pro zisk kapitalisty. Dělníci do toho nemají co mluvit.",
+                        "smith": "Sledováním vlastního zájmu (zisk z vlny) prospěje farmář společnosti efektivněji, než kdyby to zamýšlel. Veden neviditelnou rukou.",
+                        "hayek": "Cenový signál přenáší informaci 'potřebujeme vlnu' rychleji a přesněji než jakýkoli vládní výnos."
+                    }
+                }
+            },
+            {
+                "id": "choice-5b",
+                "label": "Nařídit kvóty na chov ovcí",
+                "description": "Úředníci v hlavním městě rozhodnou, kolik ovcí musí každý chovat.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 0,
+                        "financeCapital": -5,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Primitivní plánování. Stát slouží kapitálu neohrabaně.",
+                        "smith": "Žádný státník není dost moudrý, aby řídil soukromé podnikání lidí. Povede to jen k chybám.",
+                        "hayek": "Osudná domýšlivost. Centrální plánovač nemůže znát místní podmínky každého farmáře."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-6",
+        "title": "Znehodnocování mince 1785",
+        "year": 1785,
+        "summary": "Král má dluhy z válek. Rádci mu radí tajně přimíchat do zlatých mincí měď a zaplatit věřitelům 'lehkými' penězi. Ceny začínají stoupat.",
+        "learningGoal": "Inflace jako skrytá daň a porušení důvěry.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 60,
+            "financeCapital": 30,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.3,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-6a",
+                "label": "Znehodnotit měnu (Inflace)",
+                "description": "Vyřešíš dluhy, ale okradeš všechny, kdo drží hotovost.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -30,
+                        "bourgeoisie": 10,
+                        "financeCapital": -10,
+                        "stateIdeology": 5
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.4,
+                        "unemployment": -0.02
+                    },
+                    "commentary": {
+                        "marx": "Fiktivní kapitál. Stát přenáší náklady na lid pomocí inflace. Reálná mzda dělníků klesá.",
+                        "smith": "Když panovník falšuje minci, porušuje veřejnou důvěru. Je to podvod na věřitelích a občanech.",
+                        "hayek": "Inflace je jako droga. Krátkodobý stimul, dlouhodobá destrukce. Ničí cenový mechanismus."
+                    }
+                }
+            },
+            {
+                "id": "choice-6b",
+                "label": "Udržet zlatý standard",
+                "description": "Musíš zvýšit daně nebo omezit výdaje, ale peníze zůstanou poctivé.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -10,
+                        "financeCapital": 20,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0.2,
+                        "unemployment": 0.02
+                    },
+                    "commentary": {
+                        "marx": "Zlato je fetiš. Ale v kapitalismu je nutné jako univerzální ekvivalent.",
+                        "smith": "Spravedlnost. Peníze jsou měřítkem hodnoty, neměly by se měnit jako guma.",
+                        "hayek": "Zdravé peníze jsou podmínkou svobody. Zabraňují vládě konfiskovat majetek inflací."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-7",
+        "title": "Navigační akta 1651/1776",
+        "year": 1776,
+        "summary": "Zákon nařizuje, že veškeré zboží z kolonií se musí dovážet jen na našich lodích. Zbrojaři a loďaři jásají, ale zboží je dražší.",
+        "learningGoal": "Protektionismus vs. Národní bezpečnost.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 70,
+            "financeCapital": 60,
+            "stateIdeology": 90
+        },
+        "indicators": {
+            "profitRate": 0.12,
+            "classTension": 0.2,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-7a",
+                "label": "Zachovat monopol na dopravu",
+                "description": "Podporuje to naše loďstvo (obranu), i když to zdražuje obchod.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -5,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0,
+                        "unemployment": -0.01
+                    },
+                    "commentary": {
+                        "marx": "Stát a kapitál v pevném objetí. Obchodní válka je předstupněm skutečné války.",
+                        "smith": "Obrana je důležitější než bohatství. Navigační akta jsou sice ekonomicky nevýhodná, ale politicky nutná pro bezpečnost ostrova.",
+                        "hayek": "Výjimečně lze akceptovat z důvodu obrany, ale pozor, aby se z toho nestala trvalá rentiérská výhoda pro loďaře."
+                    }
+                }
+            },
+            {
+                "id": "choice-7b",
+                "label": "Povolit cizí lodě",
+                "description": "Konkurence sníží ceny dopravy. Zlevní zboží pro spotřebitele.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -10,
+                        "financeCapital": 5,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Kosmopolitní kapitál hledá nejlevnější cestu. Národní zájmy jdou stranou.",
+                        "smith": "Ekonomicky správné. Monopol loďařů poškozuje všechny ostatní.",
+                        "hayek": "Odstranění bariér obchodu vždy zvyšuje celkový blahobyt."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-8",
+        "title": "Vzdělání mládeže 1790",
+        "year": 1790,
+        "summary": "Dělba práce dělá z lidí tupé stroje. Dělník, který celý den jen brousí špičky, nemá příležitost cvičit rozum. Společnost hloupne.",
+        "learningGoal": "Negativní externality dělby práce a role státu ve vzdělávání.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 50,
+            "stateIdeology": 40
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0.4,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-8a",
+                "label": "Zřídit farní školy pro chudé",
+                "description": "Stát by měl přispívat na základní vzdělání (čtení, psaní, počty), aby lidé nebyli tak omezení.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -5,
+                        "financeCapital": -5,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": -0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Buržoazie potřebuje gramotné dělníky pro obsluhu složitějších strojů a indoktrinaci. Vzdělání je nástroj kontroly.",
+                        "smith": "Člověk, jehož život se skládá z pár jednoduchých úkonů, ztratí schopnost rozumné konverzace. Stát musí zasáhnout a vzdělávat lid.",
+                        "hayek": "Základní vzdělání placené státem je akceptovatelné, ale neměl by určovat obsah výuky (monopol na myšlení)."
+                    }
+                }
+            },
+            {
+                "id": "choice-8b",
+                "label": "Nechat to na rodičích",
+                "description": "Kdo chce vzdělání, ať si ho zaplatí. Děti jsou potřeba v továrnách.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": 10,
+                        "financeCapital": 0,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Stát udržuje masy v nevědomosti záměrně.",
+                        "smith": "Je to nebezpečné pro stabilitu státu. Nevzdělaný lid snadno podlehne fanatismu.",
+                        "hayek": "Rodina má primární odpovědnost, ale trh vzdělání může selhat u nejchudších."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-9",
+        "title": "Mzdy práce 1780",
+        "year": 1780,
+        "summary": "Mistři se tajně domluvili (kombinace), že sníží mzdy pod úroveň, která stačí k uživení rodiny. Dělníci se bouří, ale zákon jim zakazuje se sdružovat.",
+        "learningGoal": "Nerovná síla při vyjednávání mezd.",
+        "pyramidEffects": {
+            "workers": 20,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 80,
+            "financeCapital": 70,
+            "stateIdeology": 70
+        },
+        "indicators": {
+            "profitRate": 0.20,
+            "classTension": 0.8,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-9a",
+                "label": "Zasáhnout ve prospěch dělníků",
+                "description": "Pokud mzda nestačí ani na jídlo, je to proti lidskosti. Zákon by měl chránit slabší.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 30,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": -20,
+                        "financeCapital": -10,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": -0.10,
+                        "classTension": -0.4,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Stát občas musí zasáhnout proti jednotlivým kapitalistům, aby zachránil systém jako celek před revolucí.",
+                        "smith": "Když se regulace týká mezd, je vždy spravedlivá, pokud je ve prospěch dělníků. Žádná společnost nemůže kvést, když většina je chudá.",
+                        "hayek": "Minimální mzda ale může způsobit nezaměstnanost. Lepší je charita nebo přímá podpora, než křivit ceny práce."
+                    }
+                }
+            },
+            {
+                "id": "choice-9b",
+                "label": "Nechat působit trh",
+                "description": "Pokud dělníci na mzdu přistoupí, je to jejich volba. Hlad je naučí poslušnosti.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.5,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Železný zákon mzdový. Kapitalismus stlačuje mzdy na existenční minimum.",
+                        "smith": "Mistři jsou vždy a všude v tiché dohodě stlačit mzdy. A zákon je na jejich straně. To není svobodný trh.",
+                        "hayek": "Pokud je nabídka práce vysoká, mzdy klesnou. Je to signál, aby lidé hledali jiné uplatnění nebo měli méně dětí."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "smith-10",
+        "title": "Akciová společnost 1800",
+        "year": 1800,
+        "summary": "Vznikají velké obchodní společnosti. Ředitelé spravují cizí peníze (peníze akcionářů). Dochází k plýtvání a nedbalosti.",
+        "learningGoal": "Problém oddělení vlastnictví a řízení (Principal-Agent problem).",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 80,
+            "financeCapital": 90,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.12,
+            "classTension": 0.2,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-10a",
+                "label": "Omezit akciové společnosti",
+                "description": "Podporovat raději firmy řízené přímo vlastníky, kteří na ně dohlížejí lépe.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 0,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": -10,
+                        "financeCapital": -40,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Akciovky jsou předzvěstí socialismu - kapitál se stává společenským, i když zisk je soukromý. Funkce řízení se oddělila od vlastnictví.",
+                        "smith": "Od ředitelů cizích peněz nelze čekat stejnou ostražitost jako od vlastníků. Nedbalost a plýtvání vždy provázejí tyto společnosti.",
+                        "hayek": "Korporace je efektivní způsob shromažďování kapitálu. Problém managementu řeší trh (pokud firma prodělává, zkrachuje nebo ji někdo převezme)."
+                    }
+                }
+            },
+            {
+                "id": "choice-10b",
+                "label": "Nechat je volně růst",
+                "description": "Umožnit neomezenou akumulaci kapitálu. Obrovské projekty vyžadují obrovské zdroje.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 30,
+                        "financeCapital": 50,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.10,
+                        "classTension": 0.1,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Centralizace kapitálu. Monopoly rostou a ovládají stát.",
+                        "smith": "Jsou užitečné jen pro banky, pojišťovny a kanály. Ve výrobě nemohou konkurovat soukromníkům bez monopolních privilegií.",
+                        "hayek": "Moderní ekonomika stojí na korporacích. Stát by jim ale neměl dávat právní imunitu (omezené ručení) zdarma, pokud to křiví odpovědnost."
+                    }
+                }
+            }
+        ]
+    }
+]

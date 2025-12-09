@@ -1,0 +1,678 @@
+/* EconoArena - 19th Century Industrial Theme */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Crimson+Text:wght@400;600;700&family=Courier+Prime:wght@400;700&display=swap');
+
+:root {
+    /* Palette: Victorian Industrial */
+    --bg-soot: #12100e;
+    /* Dark warm black */
+    --bg-panel: #1e1915;
+    /* Dark wood/leather */
+    --bg-paper: #2b2520;
+    /* Lighter panel bg */
+
+    /* Text */
+    --text-ink: #e6dfd1;
+    /* Parchment White (Primary Text) */
+    --text-faded: #a89f91;
+    /* Old Paper (Secondary) */
+    --text-highlight: #ffecd1;
+    /* Bright Parchment */
+
+    /* Accents */
+    --brass: #c5a059;
+    /* Gold/Brass border/accents */
+    --brass-dark: #8c6d36;
+    --velvet-red: #8b2500;
+    /* Revolution/Marx */
+    --industry-steel: #5a646e;
+
+    /* School Colors (Muted/Antique) */
+    --color-marx: #a33327;
+    /* Faded Red */
+    --color-smith: #4a6fa5;
+    /* Faded Indigo */
+    --color-hayek: #556b2f;
+    /* Olive */
+    --color-keynes: #6b4c9a;
+    /* Muted Purple */
+    --color-friedman: #d4a017;
+    /* Old Gold */
+
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Crimson Text', serif;
+    --font-mono: 'Courier Prime', monospace;
+
+    /* Spacing & Borders */
+    --border-style: 2px solid var(--brass);
+    --border-double: 4px double var(--brass-dark);
+    --radius: 2px;
+    /* Sharp corners for 19th century feel */
+    --shadow-hard: 4px 4px 0px rgba(0, 0, 0, 0.5);
+    /* Hard shadow */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-soot);
+    background-image: repeating-linear-gradient(45deg,
+            rgba(0, 0, 0, 0.2) 0px,
+            rgba(0, 0, 0, 0.2) 2px,
+            transparent 2px,
+            transparent 6px);
+    color: var(--text-ink);
+    line-height: 1.6;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    /* Force no scroll on body */
+    font-size: 18px;
+}
+
+/* --- Utilities --- */
+.game-view.hidden,
+.modal.hidden,
+.hidden {
+    display: none !important;
+}
+
+/* --- Layout --- */
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    border-left: var(--border-double);
+    border-right: var(--border-double);
+    background: var(--bg-soot);
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* --- Header --- */
+/* --- Header --- */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1.5rem;
+    /* Reduced padding */
+    background: var(--bg-panel);
+    border-bottom: var(--border-double);
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    height: 70px;
+    /* Fixed compact height */
+}
+
+/* ... (skip unchanged) ... */
+
+/* --- Game View --- */
+.game-view {
+    display: grid;
+    grid-template-columns: 280px 1fr 340px;
+    /* Tighter columns */
+    gap: 1rem;
+    /* Reduced gap */
+    padding: 1rem;
+    /* Reduced padding */
+    height: calc(100vh - 70px);
+    /* Exact calculation based on fixed header */
+    overflow-y: hidden;
+    /* Ideally force no internal scroll if poss, but auto is safer. User asked for NO scrollbar though. */
+    /* Let's try hidden and rely on compact content. If content overflows, we might need a custom scrollbar or auto. */
+    overflow-y: auto;
+}
+
+/* --- Panels (Victorian Cards) --- */
+.panel {
+    background: var(--bg-panel);
+    border: 2px solid var(--brass-dark);
+    padding: 1rem;
+    /* Compact padding */
+    box-shadow: var(--shadow-hard);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* overflow-y: auto; Removed to allow tooltips to popup */
+}
+
+/* ... */
+/* --- Scenario Image --- */
+.scenario-image {
+    width: 100%;
+    height: 200px;
+    /* Significantly reduced from 350px */
+    object-fit: cover;
+    border: 4px solid #1a1a1a;
+    outline: 2px solid var(--brass-dark);
+    filter: sepia(30%) contrast(1.1);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.main-header::before {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid rgba(197, 160, 89, 0.3);
+    /* Inner border decoration */
+    pointer-events: none;
+}
+
+.main-header h1 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    color: var(--brass);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 0px #000;
+}
+
+.mode-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.mode-btn {
+    background: transparent;
+    border: 1px solid var(--industry-steel);
+    color: var(--industry-steel);
+    padding: 0.5rem 1rem;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.2s;
+    border-radius: var(--radius);
+}
+
+.mode-btn:hover:not(:disabled) {
+    border-color: var(--brass);
+    color: var(--brass);
+}
+
+.mode-btn--active {
+    background: var(--brass-dark);
+    color: var(--bg-soot) !important;
+    border-color: var(--brass);
+    font-weight: 700;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.mode-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+/* Locked State */
+.mode-btn.locked {
+    opacity: 0.5;
+    cursor: not-allowed;
+    filter: grayscale(100%);
+    position: relative;
+}
+
+.mode-btn.locked:hover::after {
+    content: "Dokončete předchozí úroveň!";
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--bg-soot);
+    color: var(--brass);
+    border: 1px solid var(--brass);
+    padding: 0.5rem;
+    width: 200px;
+    font-size: 0.8rem;
+    z-index: 100;
+    pointer-events: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+    white-space: normal;
+    text-align: center;
+}
+
+.arrow-connection {
+    /* Optional visual connector if desired later */
+    display: none;
+}
+
+.lock-icon {
+    font-size: 0.8em;
+    margin-left: 5px;
+    vertical-align: middle;
+}
+
+/* --- Game View --- */
+/* --- Game View --- */
+.game-view {
+    display: grid;
+    grid-template-columns: 280px 1fr 340px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    height: calc(100vh - 80px);
+    /* Adjusted for compact header */
+    overflow-y: auto;
+    /* Allow scroll if needed, but aim to fit */
+    align-content: start;
+}
+
+/* --- Panels (Victorian Cards) --- */
+.panel {
+    background: var(--bg-panel);
+    border: 2px solid var(--brass-dark);
+    padding: 1rem;
+    /* Compact padding */
+    box-shadow: var(--shadow-hard);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-height: 100%;
+}
+
+
+.panel::after {
+    /* Corner decorations */
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    border: 1px dashed rgba(197, 160, 89, 0.2);
+    pointer-events: none;
+}
+
+h2,
+h3 {
+    font-family: var(--font-heading);
+    color: var(--brass);
+    margin-bottom: 1rem;
+    /* Reduced margin */
+    border-bottom: 1px solid var(--industry-steel);
+    padding-bottom: 0.3rem;
+    /* Reduced padding */
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.6rem;
+    /* Slightly smaller */
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    /* Slightly smaller */
+    color: var(--text-faded);
+    border: none;
+    text-align: left;
+}
+
+/* --- Pyramid --- */
+.pyramid-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4px;
+    /* Reduced gap */
+    padding: 0.5rem 0;
+    /* Compact padding */
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.pyramid-layer {
+    background: #333;
+    color: #e0e0e0;
+    padding: 0.8rem;
+    text-align: center;
+    font-family: var(--font-heading);
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+    transition: width 0.5s ease, background 0.5s ease;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Texture overlay for layers */
+.pyramid-layer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: repeating-linear-gradient(90deg, transparent 0, transparent 2px, rgba(0, 0, 0, 0.2) 3px);
+    pointer-events: none;
+}
+
+/* States - Muted Historical Colors */
+.layer--happy {
+    background: #2f4f2f;
+    border-color: #4a704a;
+}
+
+/* Hunter Green */
+.layer--neutral {
+    background: #8b5a2b;
+    border-color: #a06e3d;
+}
+
+/* Leather Brown */
+.layer--angry {
+    background: #5a1a1a;
+    border-color: #7d2626;
+}
+
+/* Blood Red */
+
+/* --- Scenario Image --- */
+/* --- Scenario Image --- */
+.scenario-image {
+    width: 100%;
+    height: 220px;
+    /* Reduced for Compact View */
+    object-fit: cover;
+    border: 4px solid #1a1a1a;
+    outline: 2px solid var(--brass-dark);
+    filter: sepia(30%) contrast(1.1);
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.scenario-year {
+    font-family: var(--font-mono);
+    color: var(--brass);
+    font-size: 1.5rem;
+    border-top: 1px solid var(--brass-dark);
+    border-bottom: 1px solid var(--brass-dark);
+    display: inline-block;
+    padding: 0.2rem 1rem;
+    margin-bottom: 1rem;
+}
+
+.scenario-text {
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+/* Choice Buttons */
+.choices-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.choice-btn {
+    background: linear-gradient(to bottom, #2b2520, #1e1915);
+    border: 1px solid var(--brass-dark);
+    color: var(--text-ink);
+    padding: 1.5rem;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #000;
+    transition: all 0.1s;
+    position: relative;
+}
+
+.choice-btn:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #000;
+}
+
+.choice-btn:hover {
+    border-color: var(--brass);
+    background: #362e28;
+}
+
+.choice-btn h4 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: var(--brass);
+    margin-bottom: 0.5rem;
+}
+
+.choice-btn p {
+    font-family: var(--font-body);
+    font-style: italic;
+    color: var(--text-faded);
+}
+
+/* --- Indicators --- */
+.indicator-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem;
+    border-bottom: 1px solid var(--industry-steel);
+    font-family: var(--font-mono);
+}
+
+.indicator-label {
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: var(--text-faded);
+}
+
+.indicator-value {
+    color: var(--brass);
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Commentary Box */
+.commentary-box {
+    margin-top: 2rem;
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid var(--industry-steel);
+    padding: 1rem;
+}
+
+.commentary-text {
+    font-family: var(--font-body);
+    font-style: italic;
+    font-size: 1.1rem;
+    padding-left: 1rem;
+    border-left: 4px solid var(--color-marx);
+    /* Dynamic */
+}
+
+/* School Switcher */
+.school-switcher {
+    display: flex;
+    border-bottom: 1px solid var(--industry-steel);
+    margin-bottom: 1rem;
+}
+
+.school-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    color: var(--text-faded);
+    font-family: var(--font-heading);
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: 0.2s;
+}
+
+.school-btn:hover {
+    color: var(--text-ink);
+}
+
+.school-btn.active {
+    color: var(--brass);
+    border-bottom: 3px solid var(--brass);
+}
+
+/* --- Welcome & Modal --- */
+.welcome-screen,
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.welcome-content,
+.modal-content {
+    background: var(--bg-panel);
+    border: 4px double var(--brass);
+    padding: 3rem;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+}
+
+.welcome-content h2,
+.modal-content h2 {
+    font-size: 3rem;
+    color: var(--brass);
+    border-bottom: 2px solid var(--brass-dark);
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.btn-primary {
+    background: var(--velvet-red);
+    color: var(--text-ink);
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border: 2px solid #5a1a1a;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #330000;
+    transition: all 0.1s;
+    margin-top: 1rem;
+}
+
+.btn-primary:hover {
+    background: #a33327;
+}
+
+.btn-primary:active {
+    transform: translateY(6px);
+    box-shadow: none;
+}
+
+/* Revolution Modal Specifics */
+.revolution-theme {
+    border-color: var(--velvet-red);
+    background: #1a0505;
+}
+
+.revolution-theme h2 {
+    color: var(--velvet-red);
+    border-color: var(--velvet-red);
+}
+
+/* Victory Modal Specifics */
+.victory-theme {
+    border-color: var(--brass);
+    background: #0f150f;
+    /* very dark green/black */
+}
+
+.victory-theme h2 {
+    color: var(--brass);
+    border-color: var(--brass);
+}
+
+/* Global Tooltip (JS Driven) */
+.global-tooltip {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.95);
+    color: #fff;
+    padding: 10px 15px;
+    border: 1px solid var(--brass);
+    font-size: 0.9rem;
+    z-index: 100000;
+    /* Super high layer */
+    pointer-events: none;
+    /* Ignore mouse events to prevent flicker */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+    max-width: 250px;
+    border-radius: var(--radius);
+    text-align: left;
+    white-space: normal;
+}
+
+/* Tooltip Trigger Helpers */
+.tooltip-container,
+.mode-btn.locked {
+    cursor: help;
+    /* Indicate hoverability */
+}
+
+.info-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: var(--bg-soot);
+    color: var(--brass);
+    border: 1px solid var(--brass);
+    border-radius: 50%;
+    font-family: 'Times New Roman', serif;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: help;
+    vertical-align: middle;
+    margin-left: 8px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.8);
+    transition: all 0.2s ease;
+}
+
+.info-icon:hover {
+    background: var(--brass);
+    color: var(--bg-soot);
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--brass-dark);
+}
+
+/* Remove old CSS tooltips to avoid duplication/mess */
+.mode-btn.locked:hover::after,
+.tooltip-text {
+    display: none !important;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .game-view {
+        grid-template-columns: 1fr;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .panel {
+        margin-bottom: 1.5rem;
+    }
+
+    .app-container {
+        border-left: none;
+        border-right: none;
+    }
+}

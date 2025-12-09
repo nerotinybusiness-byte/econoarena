@@ -1,0 +1,13 @@
+{
+    "name": "econoarena",
+    "version": "1.0.0",
+    "description": "Educational economic simulation game",
+    "main": "server.js",
+    "scripts": {
+        "start": "node server.js",
+        "build": "echo 'No build step required'"
+    },
+    "dependencies": {
+        "express": "^4.18.2"
+    }
+}

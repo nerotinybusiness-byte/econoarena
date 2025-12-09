@@ -1,0 +1,722 @@
+[
+    {
+        "id": "marx-1",
+        "title": "Tovární město 1870",
+        "year": 1870,
+        "summary": "Jsi majitelem textilní továrny v rychle rostoucím průmyslovém městě. Konkurence tlačí ceny dolů a ty musíš udržet ziskovost, abys nezkrachoval. Dělníci se začínají bouřit kvůli dlouhé pracovní době.",
+        "imagePath": "images/marx-1.png",
+        "learningGoal": "Pochopení vztahu mezi pracovním dnem, nadhodnotou a mírou zisku.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 80,
+            "financeCapital": 70,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.15,
+            "classTension": 0.2,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-1a",
+                "label": "Prodloužit pracovní den na 14 hodin",
+                "description": "Zvýšíš absolutní nadhodnotu. Dělníci vyrobí více za stejnou mzdu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": 10,
+                        "financeCapital": 5,
+                        "stateIdeology": -5
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.3,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Klasická metoda zvýšení absolutní nadhodnoty. Kapitál tyje z životní síly dělníka, což vede k jeho fyzické degeneraci a růstu odporu.",
+                        "smith": "Pokud je práce dobrovolná směna, dělník by měl mít možnost odejít. Dlouhé hodiny ale mohou snižovat produktivitu únavou.",
+                        "hayek": "Stát by neměl diktovat délku pracovní doby; trh sám najde rovnováhu mezi preferencí volného času a výdělkem."
+                    },
+                    "imagePath": "images/marx-1-a.png"
+                }
+            },
+            {
+                "id": "choice-1b",
+                "label": "Investovat do nových parních strojů",
+                "description": "Zvýšíš produktivitu práce (relativní nadhodnota), ale propustíš část dělníků.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": -5,
+                        "bourgeoisie": 5,
+                        "financeCapital": 15,
+                        "stateIdeology": 5
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.1,
+                        "unemployment": 0.15
+                    },
+                    "commentary": {
+                        "marx": "Zavedení strojů zvyšuje organické složení kapitálu. Krátkodobě zisk (extra nadhodnota), ale dlouhodobě klesá míra zisku a roste 'rezervní armáda nezaměstnaných'.",
+                        "smith": "Dělba práce a mechanizace jsou klíčem k bohatství národů. Vyšší produktivita zlevní zboží pro všechny.",
+                        "hayek": "Inovace je proces kreativní destrukce. Dočasná nezaměstnanost je cenou za pokrok, trh tyto zdroje časem realokuje efektivněji."
+                    },
+                    "imagePath": "images/marx-1-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-2",
+        "title": "Krize nadvýroby 1885",
+        "year": 1885,
+        "imagePath": "images/marx-2.png",
+        "summary": "Trh je zaplaven zbožím. Všichni vyráběli jako o závod, ale dělníci nemají dost peněz, aby si to koupili. Sklady praskají ve švech, ceny padají pod náklady.",
+        "learningGoal": "Demonstrace cyklických krizí kapitalismu a rozporu mezi produkcí a spotřebou.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 90,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.6,
+            "unemployment": 0.15
+        },
+        "choices": [
+            {
+                "id": "choice-2a",
+                "label": "Zničit část zásob a zavřít továrnu",
+                "description": "Aby se udržely ceny, je třeba omezit nabídku. Propustíš lidi a zastavíš stroje.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -10,
+                        "financeCapital": 10,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": 0.4,
+                        "unemployment": 0.2
+                    },
+                    "commentary": {
+                        "marx": "Absurdita kapitalismu: ničí se bohatství a výrobní síly, protože 'nejsou ziskové'. Bída uprostřed nadbytku.",
+                        "smith": "Přirozená korekce trhu. Pokud je nabídka vyšší než poptávka, zdroje se musí přesunout jinam.",
+                        "hayek": "Krize je očistný proces po období malinvestic způsobených levným úvěrem. Vládní zásahy by jen prodloužily agónii."
+                    },
+                    "imagePath": "images/marx-2-a.png"
+                }
+            },
+            {
+                "id": "choice-2b",
+                "label": "Snížit ceny a doufat v dobytí trhu",
+                "description": "Pustíš se do cenové války. Kdo má větší rezervy, přežije a ovládne trh.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 15,
+                        "financeCapital": 5,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Koncentrace kapitálu. Velké ryby požírají malé. Menší kapitalisté (drobná buržoazie) krachují a padají do proletariátu.",
+                        "smith": "Konkurence prospívá spotřebiteli nízkými cenami. Neefektivní výrobci musí ustoupit těm efektivnějším.",
+                        "hayek": "Cenový signál funguje. Nízké ceny informují podnikatele, že mají omezit výrobu."
+                    },
+                    "imagePath": "images/marx-2-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-3",
+        "title": "Imperialismus a vývoz kapitálu 1900",
+        "year": 1900,
+        "imagePath": "images/marx-3.png",
+        "summary": "Domácí trh je nasycený, míra zisku klesá. Banky a monopoly hledají nové příležitosti. Vláda nabízí podporu pro expanzi do kolonií.",
+        "learningGoal": "Spojení finančního kapitálu, monopolů a státní moci v éře imperialismu.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 85,
+            "financeCapital": 95,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.08,
+            "classTension": 0.5,
+            "unemployment": 0.1
+        },
+        "choices": [
+            {
+                "id": "choice-3a",
+                "label": "Investovat do železnice v kolonii",
+                "description": "Vysoký výnos, levná pracovní síla a suroviny. Stát zajistí 'bezpečnost' investice armádou.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 5,
+                        "bourgeoisie": 10,
+                        "financeCapital": 20,
+                        "stateIdeology": 15
+                    },
+                    "indicators": {
+                        "profitRate": 0.15,
+                        "classTension": -0.1,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Kapitalismus se stává světovým systémem. Dělnická aristokracie doma je korumpována zisky z vykořisťování kolonií. Válka je nevyhnutelná.",
+                        "smith": "Obchod mezi národy je výhodný, ale kolonie udržované monopolem a armádou jsou pro mateřskou zemi ekonomickou zátěží.",
+                        "hayek": "Volný obchod je zárukou míru. Protekcionismus a koloniální politika státu však vedou ke konfliktům mezi národy."
+                    },
+                    "imagePath": "images/marx-3-a.png"
+                }
+            },
+            {
+                "id": "choice-3b",
+                "label": "Zvýšit mzdy domácím dělníkům",
+                "description": "Zvýšíš kupní sílu doma, abys podpořil poptávku. Nižší zisky, ale sociální smír.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 25,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -10,
+                        "financeCapital": -10,
+                        "stateIdeology": 5
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.3,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Sociální reformismus. Pouze oddaluje revoluci a třídní boj. Podstata vykořisťování se nemění, jen řetězy jsou pozlacené.",
+                        "smith": "Vysoké mzdy jsou znakem rostoucího bohatství a motivují k pilnosti. Jsou pro společnost spíše přínosem.",
+                        "hayek": "Pokud jsou mzdy vynuceny odbory nad tržní úroveň, povede to k nezaměstnanosti a inflaci."
+                    },
+                    "imagePath": "images/marx-3-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-4",
+        "title": "Generální stávka 1895",
+        "year": 1895,
+        "imagePath": "images/marx-4.png",
+        "summary": "Odbory zesílily a organizují celonárodní stávku za osmihodinovou pracovní dobu a volební právo. Výroba stojí, ulice jsou plné demonstrujících.",
+        "learningGoal": "Třídní boj jako hybná síla dějin. Politická vs. ekonomická akce.",
+        "pyramidEffects": {
+            "workers": 70,
+            "petitBourgeoisie": 20,
+            "bourgeoisie": 20,
+            "financeCapital": 10,
+            "stateIdeology": 40
+        },
+        "indicators": {
+            "profitRate": -0.10,
+            "classTension": 0.9,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-4a",
+                "label": "Potlačit stávku silou",
+                "description": "Povolat armádu a policii. Rozbít odbory, zatknout vůdce. Pořádek musí být.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -40,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 20,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Stát odhazuje masku nestrannosti a ukazuje se jako nástroj diktatury buržoazie. Násilí plodí násilí.",
+                        "smith": "Odbory (kombinace) dělníků jsou zakázány, zatímco kombinace mistrů jsou tolerovány. To není fér, ale násilí poškozuje majetek.",
+                        "hayek": "Vynucování kontraktů je funkcí státu. Pokud stávka zahrnuje násilí proti stávkokazům, stát musí zasáhnout na ochranu svobody jednotlivce pracovat."
+                    },
+                    "imagePath": "images/marx-4-a.png"
+                }
+            },
+            {
+                "id": "choice-4b",
+                "label": "Ustoupit požadavkům (Kompromis)",
+                "description": "Zkrátit pracovní dobu a uznat odbory jako partnera. Koupit si sociální smír za část zisku.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 30,
+                        "petitBourgeoisie": -5,
+                        "bourgeoisie": -10,
+                        "financeCapital": -5,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": -0.5,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Dílčí vítězství proletariátu. Učí dělníky jejich síle, ale neřeší podstatu námezdního otroctví.",
+                        "smith": "Vyšší mzdy a kratší doba mohou vést k vyšší výkonnosti, pokud jsou dělníci odpočatí a spokojení.",
+                        "hayek": "Zavádí rigidity na trh práce. Odbory získávají monopolní moc, což povede k vyloučení méně produktivních pracovníků (nezaměstnanosti)."
+                    },
+                    "imagePath": "images/marx-4-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-5",
+        "title": "Dětská práce 1875",
+        "year": 1875,
+        "imagePath": "images/marx-5.png",
+        "summary": "V dolech a továrnách pracují osmileté děti. Jsou levné a dostanou se do úzkých prostor. Veřejnost je pobouřena, ale zisky jsou vysoké.",
+        "learningGoal": "Komodifikace lidských bytostí. Rozpor mezi ziskem a lidskostí.",
+        "pyramidEffects": {
+            "workers": 20,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 60,
+            "stateIdeology": 30
+        },
+        "indicators": {
+            "profitRate": 0.18,
+            "classTension": 0.4,
+            "unemployment": 0.10
+        },
+        "choices": [
+            {
+                "id": "choice-5a",
+                "label": "Zakázat dětskou práci",
+                "description": "Děti patří do školy, ne do dolu. Sníží to zisky a zvýší náklady.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -10,
+                        "financeCapital": -5,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.1,
+                        "unemployment": -0.02
+                    },
+                    "commentary": {
+                        "marx": "Kapitál ničí dělnickou rodinu. Zákaz je nutný, aby si kapitál nezničil vlastní zdroj budoucí pracovní síly.",
+                        "smith": "Stát musí chránit ty, kteří se nemohou chránit sami. Ale pozor, aby rodiny nepřišly o nutný příjem.",
+                        "hayek": "Dětská práce je strašná, ale mizí s růstem bohatství. Zákaz v chudé společnosti může znamenat smrt hladem pro dítě."
+                    },
+                    "imagePath": "images/marx-5-a.png"
+                }
+            },
+            {
+                "id": "choice-5b",
+                "label": "Ponechat to na trhu a rodičích",
+                "description": "Pokud rodiče posílají děti pracovat, asi potřebují peníze.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 10,
+                        "financeCapital": 5,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.3,
+                        "unemployment": 0.02
+                    },
+                    "commentary": {
+                        "marx": "Dělník prodává svou ženu a děti do otroctví kapitálu, protože nemá jinou volbu. Svoboda trhu je iluze.",
+                        "smith": "Je to smutné, ale vysoké zisky časem zvýší mzdy dospělých, a děti pak nebudou muset pracovat.",
+                        "hayek": "Zlepšení přijde s ekonomickým růstem, ne dekretem."
+                    },
+                    "imagePath": "images/marx-5-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-6",
+        "title": "Původní akumulace 1872",
+        "year": 1872,
+        "imagePath": "images/marx-6.png",
+        "summary": "Velkostatkáři ohrazují obecní pastviny (commons). Rolníci přicházejí o obživu a proudí do měst jako levná pracovní síla pro tvé továrny.",
+        "learningGoal": "Vznik proletariátu násilným oddělením od výrobních prostředků.",
+        "pyramidEffects": {
+            "workers": 10,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 90,
+            "financeCapital": 50,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.15,
+            "classTension": 0.5,
+            "unemployment": 0.20
+        },
+        "choices": [
+            {
+                "id": "choice-6a",
+                "label": "Vítat příliv levné síly",
+                "description": "Čím více lidí hledá práci, tím nižší mzdy můžeš platit.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.10,
+                        "classTension": 0.4,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Kapitalismus nevznikl z pilnosti, ale z loupeže a krve. Rolníci byli vyhnáni z půdy, aby se stali 'svobodnými' pro vykořisťování.",
+                        "smith": "Změna vlastnických práv je bolestivá, ale velkostatky jsou produktivnější než malé políčka. Městský průmysl potřebuje ruce.",
+                        "hayek": "Jasná vlastnická práva jsou základ. Společné vlastnictví vede k tragédii obecní pastviny (vyčerpání zdrojů)."
+                    },
+                    "imagePath": "images/marx-6-a.png"
+                }
+            },
+            {
+                "id": "choice-6b",
+                "label": "Podpořit práva rolníků",
+                "description": "Zastat se vyhnaných lidí. I když to znamená méně dělníků pro tvou fabriku.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -20,
+                        "financeCapital": -10,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.2,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Beznadějná snaha zastavit kolo dějin. Malovýroba musí ustoupit velkovýrobě.",
+                        "smith": "Bezpečí vlastnictví by mělo platit i pro chudé. Násilné zábory jsou nespravedlivé.",
+                        "hayek": "Vlastnická práva musí být respektována. Pokud měli rolníci nárok na půdu, neměla jim být vzata."
+                    },
+                    "imagePath": "images/marx-6-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-7",
+        "title": "Fetišismus zboží 1880",
+        "year": 1880,
+        "imagePath": "images/marx-7.png",
+        "summary": "Obchody jsou plné krásného zboží. Lidé uctívají produkty, ale nevidí pot a krev dělníků, kteří je vyrobili. Vztahy mezi lidmi se jeví jako vztahy mezi věcmi.",
+        "learningGoal": "Zastření sociálních vztahů tržní směnou.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 60,
+            "bourgeoisie": 70,
+            "financeCapital": 80,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-7a",
+                "label": "Investovat do reklamy a obalu",
+                "description": "Zvýšit atraktivitu zboží. Vytvořit iluzi a touhu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 0,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 30,
+                        "financeCapital": 20,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.08,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Zboží se stává modlou. Reklama manipuluje vědomí a zakrývá realitu vykořisťování.",
+                        "smith": "Klamání zákazníka je nemorální, ale informování o produktech je pro trh nutné.",
+                        "hayek": "Reklama pomáhá spotřebitelům orientovat se v nabídce. Je to součást konkurence."
+                    },
+                    "imagePath": "images/marx-7-a.png"
+                }
+            },
+            {
+                "id": "choice-7b",
+                "label": "Zveřejnit podmínky výroby",
+                "description": "Ukázat zákazníkům pravdu. 'Fair trade' přístup.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -10,
+                        "financeCapital": -20,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "První krok k uvědomění. Ale dokud existuje trh, zboží bude vždy tajemnou šifrou.",
+                        "smith": "Transparentnost je dobrá. Zákazník je král a má právo vědět, co kupuje.",
+                        "hayek": "Spotřebitelé hlasují svými penězi. Pokud chtějí etické zboží, trh ho dodá."
+                    },
+                    "imagePath": "images/marx-7-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-8",
+        "title": "Odcizení od přírody 1890",
+        "year": 1890,
+        "imagePath": "images/marx-8.png",
+        "summary": "Tvá chemička vypouští odpad do řeky. Ryby mrou, voda páchne. Místní si stěžují, ale čistička by stála roční zisk.",
+        "learningGoal": "Kapitalismus a ekologie. Trhlina v metabolismu člověka a přírody.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 20,
+            "bourgeoisie": 80,
+            "financeCapital": 60,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.20,
+            "classTension": 0.3,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-8a",
+                "label": "Pokračovat ve vypouštění",
+                "description": "Příroda je dar zdarma. Proč platit za něco, co nikomu nepatří?",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -30,
+                        "bourgeoisie": 10,
+                        "financeCapital": 0,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Kapitalismus vyčerpává nejen dělníka, ale i půdu. Po nás potopa.",
+                        "smith": "Znečišťování vody poškozuje sousedy. To je porušení spravedlnosti.",
+                        "hayek": "Problém společných statků. Protože řeka nikomu nepatří, každý ji ničí. Řešením by byla privatizace nebo jasná pravidla odpovědnosti."
+                    },
+                    "imagePath": "images/marx-8-a.png"
+                }
+            },
+            {
+                "id": "choice-8b",
+                "label": "Postavit čističku",
+                "description": "Snížíš zisk, ale zlepšíš vztahy a zdraví lidí.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": -20,
+                        "financeCapital": -10,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": -0.10,
+                        "classTension": -0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Racionální hospodaření s přírodou je možné jen v komunismu, kde výroba není řízena ziskem.",
+                        "smith": "Odpovědný obchodník myslí na dlouhodobou pověst.",
+                        "hayek": "Internalizace externalit. Správné. Znečišťovatel by měl platit."
+                    },
+                    "imagePath": "images/marx-8-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-9",
+        "title": "Pařížská komuna 1871",
+        "year": 1871,
+        "imagePath": "images/marx-9.png",
+        "summary": "Dělníci v Paříži povstali a převzali moc. Zavedli samosprávu, zrušili policii a armádu. Buržoazie v panice utekla.",
+        "learningGoal": "Diktatura proletariátu jako přechodná fáze.",
+        "pyramidEffects": {
+            "workers": 90,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 10,
+            "financeCapital": 0,
+            "stateIdeology": 20
+        },
+        "indicators": {
+            "profitRate": -0.50,
+            "classTension": 1.0,
+            "unemployment": 0.10
+        },
+        "choices": [
+            {
+                "id": "choice-9a",
+                "label": "Podpořit Komunu",
+                "description": "Vzor pro budoucnost! Přímá demokracie a rovnost.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -50,
+                        "financeCapital": -50,
+                        "stateIdeology": -40
+                    },
+                    "indicators": {
+                        "profitRate": -1.0,
+                        "classTension": -0.5,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Konečně nalezená politická forma pro osvobození práce. Zteč nebes.",
+                        "smith": "Chaos a násilí. Bez ochrany majetku nemůže společnost fungovat.",
+                        "hayek": "Totalitní demokracie. Vůle většiny bez omezení zákonem vede k teroru."
+                    },
+                    "imagePath": "images/marx-9-a.png"
+                }
+            },
+            {
+                "id": "choice-9b",
+                "label": "Přidat se k Versailles (kontrarevoluce)",
+                "description": "Obnovit pořádek krvavou silou. Komunardi musí být postříleni.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -50,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": 30,
+                        "financeCapital": 40,
+                        "stateIdeology": 50
+                    },
+                    "indicators": {
+                        "profitRate": 0.20,
+                        "classTension": -0.2,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Buržoazie se neštítí ničeho, aby si udržela moc. Krvavý týden ukázal pravou tvář 'civilizace'.",
+                        "smith": "Obnovení vlády práva je nutné, ale brutalita je politováníhodná.",
+                        "hayek": "Stát musí mít monopol na násilí, aby zabránil občanské válce."
+                    },
+                    "imagePath": "images/marx-9-b.png"
+                }
+            }
+        ]
+    },
+    {
+        "id": "marx-10",
+        "title": "Finanční aristokracie 1895",
+        "year": 1895,
+        "imagePath": "images/marx-10.png",
+        "summary": "Průmysl ustupuje do pozadí, vládnou banky a burza. Spekulant vydělá za den více než továrník za rok. Peníze dělají peníze (M-M').",
+        "learningGoal": "Dominance finančního kapitálu v pozdním kapitalismu.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 20,
+            "bourgeoisie": 60,
+            "financeCapital": 100,
+            "stateIdeology": 70
+        },
+        "indicators": {
+            "profitRate": 0.12,
+            "classTension": 0.4,
+            "unemployment": 0.08
+        },
+        "choices": [
+            {
+                "id": "choice-10a",
+                "label": "Hrát na burze",
+                "description": "Zapojit se do kasina. Spekulace, fúze, akvizice.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 10,
+                        "financeCapital": 30,
+                        "stateIdeology": 0
+                    },
+                    "indicators": {
+                        "profitRate": 0.30,
+                        "classTension": 0.2,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Vrchol parazitismu. Společnost je vydírána hrstkou finančníků. Bublina praskne.",
+                        "smith": "Pozor na projekty, které slibují nereálné zisky. Bubliny (South Sea Bubble) ničí důvěru.",
+                        "hayek": "Spekulace má svou funkci - vyhlazuje cenové výkyvy. Ale pokud centrální banka tiskne levné peníze, vznikají nebezpečné bubliny."
+                    },
+                    "imagePath": "images/marx-10-a.png"
+                }
+            },
+            {
+                "id": "choice-10b",
+                "label": "Zdanit finanční transakce",
+                "description": "omezit spekulaci a podpořit reálnou výrobu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": -5,
+                        "financeCapital": -40,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": -0.10,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Reformismus. Kapitál si najde cestu jinam (daňové ráje).",
+                        "smith": "Daně by měly být neutrální, ale hazardéry není třeba litovat.",
+                        "hayek": "Zdanění kapitálu sníží investice a tím i produktivitu a mzdy všech."
+                    },
+                    "imagePath": "images/marx-10-b.png"
+                }
+            }
+        ]
+    }
+]

@@ -1,0 +1,294 @@
+[
+    {
+        "id": "friedman-1",
+        "title": "Inflace a Fed 1970",
+        "year": 1970,
+        "summary": "Inflace v USA dosahuje dvouciferných čísel. Vláda se snaží krotit ceny regulacemi, ale nefunguje to. Lidé ztrácejí důvěru v dolar.",
+        "learningGoal": "Inflace je vždy a všude peněžní jev.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 70,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.4,
+            "unemployment": 0.06
+        },
+        "choices": [
+            {
+                "id": "choice-1a",
+                "label": "Zastavit tisk peněz (Volckerův šok)",
+                "description": "Zvýšit úrokové sazby klidně na 20 %, omezit množství peněz v oběhu. Bude to bolet (recese), ale inflace zmizí.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 10,
+                        "financeCapital": 30,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.3,
+                        "unemployment": 0.10
+                    },
+                    "commentary": {
+                        "marx": "Kapitál disciplinuje pracující nezaměstnaností, aby ochránil hodnotu svých aktiv.",
+                        "smith": "Stabilní měna je základ spravedlnosti.",
+                        "hayek": "Správně. Inflaci je třeba zastavit za každou cenu, jinak zničí cenový systém.",
+                        "keynes": "Příliš drastické! Vysoké úroky zabijí investice a vyvolají zbytečnou recesi.",
+                        "friedman": "Jediné řešení. Inflace je způsobena nadbytkem peněz. Musíme zavést pravidlo stabilního růstu peněžní zásoby."
+                    }
+                }
+            },
+            {
+                "id": "choice-1b",
+                "label": "Zavést cenové a mzdové stropy",
+                "description": "Zakázat firmám zdražovat a odborům chtít víc peněz. Úřední kontrola cen.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -20,
+                        "financeCapital": -20,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Stát se snaží řídit chaos trhu, ale kapitál si najde cestu.",
+                        "smith": "Když je cena regulována, zboží zmizí z trhu. Vznikne nedostatek.",
+                        "hayek": "Cesta do otroctví. Stát nahrazuje tržní signály příkazy.",
+                        "keynes": "Jako dočasné opatření proti mzdově-cenové spirále to může fungovat, ale ne dlouhodobě.",
+                        "friedman": "Jako rozbít teploměr, abychom snížili horečku. Povede to jen frontám a černému trhu, inflaci to neřeší."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "friedman-2",
+        "title": "Volba ve vzdělání 1980",
+        "year": 1980,
+        "summary": "Veřejné školy ve vnitřních městech upadají. Děti z chudých rodin dostávají mizerné vzdělání a nemají úniku, protože si nemohou dovolit soukromou školu.",
+        "learningGoal": "Konkurence ve veřejných službách prostřednictvím voucherů.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 70
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.3,
+            "unemployment": 0.10
+        },
+        "choices": [
+            {
+                "id": "choice-2a",
+                "label": "Zavést školní poukazy (Vouchery)",
+                "description": "Stát dá peníze rodičům, ne školám. Rodiče si vyberou školu (i soukromou). Školy musí soutěžit o žáky.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 30,
+                        "bourgeoisie": 10,
+                        "financeCapital": 0,
+                        "stateIdeology": -30
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Privatizace veřejného statku. Vzdělání se stává zbožím. Kvalitní školy budou jen pro elitu, co si připlatí.",
+                        "smith": "Učitelé placení státem často zleniví. Pokud budou závislí na poplatcích od žáků, budou se víc snažit.",
+                        "hayek": "Konkurence je objevnou procedurou i ve vzdělání. Zvýší to kvalitu a svobodu.",
+                        "keynes": "Vzdělání je veřejný statek, trh zde může selhat.",
+                        "friedman": "Tržní konkurence je nejlepší lék na neefektivitu státního monopolu. Chudí rodiče získají moc volby, kterou mají dnes jen bohatí."
+                    }
+                }
+            },
+            {
+                "id": "choice-2b",
+                "label": "Zvýšit rozpočet státních škol",
+                "description": "Více peněz na platy učitelů a vybavení. Centralizované reformy.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": -5,
+                        "financeCapital": -5,
+                        "stateIdeology": 40
+                    },
+                    "indicators": {
+                        "profitRate": -0.01,
+                        "classTension": -0.05,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Správně. Rovný přístup ke vzdělání bez ohledu na peníze.",
+                        "smith": "Peníze samy o sobě kvalitu nezajistí, pokud chybí motivace.",
+                        "hayek": "Více peněz do byrokracie bez změny systému nic nevyřeší.",
+                        "keynes": "Investice do lidského kapitálu je klíčová pro růst.",
+                        "friedman": "Nalili jsme tam miliardy a výsledky se zhoršily. Problém není v penězích, ale v systému monopolu, který se nemusí zodpovídat zákazníkovi."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "friedman-3",
+        "title": "Negativní daň z příjmu 1968",
+        "year": 1968,
+        "summary": "Sociální systém je složitý a demotivující (past chudoby). Stovky úředníků rozhodují, kdo co dostane. Chudí, kteří začnou pracovat, o dávky přijdou a pohorší si.",
+        "learningGoal": "Efektivita sociálního systému a motivace k práci.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.4,
+            "unemployment": 0.08
+        },
+        "choices": [
+            {
+                "id": "choice-3a",
+                "label": "Zavést Negativní daň z příjmu",
+                "description": "Zrušit všechny dávky a úřady. Každý pod určitou hranicí dostane peníze od státu automaticky přes daně. Vždy se vyplatí pracovat.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 10,
+                        "financeCapital": 0,
+                        "stateIdeology": -40
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": -0.2,
+                        "unemployment": -0.02
+                    },
+                    "commentary": {
+                        "marx": "Základní příjem, který udržuje dělníky při životě pro potřeby kapitálu, ale dává jim trochu důstojnosti.",
+                        "smith": "Pomoc chudým by měla být jednoduchá a přímá.",
+                        "hayek": "Minimální záchranná síť je v bohaté společnosti přijatelná, pokud nenarušuje trh.",
+                        "keynes": "Podpora spotřeby nejchudších má vysoký multiplikační efekt.",
+                        "friedman": "Nejlepší způsob, jak pomoci chudým, je dát jim peníze. Ne úředníky, ne naturálie. Odstraní to byrokracii a past chudoby."
+                    }
+                }
+            },
+            {
+                "id": "choice-3b",
+                "label": "Zachovat adresný sociální systém",
+                "description": "Úředníci posoudí potřeby každého individuálně. Kontrola, aby se nezneužívalo.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 0,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -5,
+                        "financeCapital": 0,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": -0.01,
+                        "classTension": 0.1,
+                        "unemployment": 0.01
+                    },
+                    "commentary": {
+                        "marx": "Státní paternalismus. Kontrola a ponižování chudých.",
+                        "smith": "Byrokracie má tendenci růst sama pro sebe.",
+                        "hayek": "Přílišná moc v rukou úředníků rozhodovat o osudech lidí.",
+                        "keynes": "Cílená pomoc může být efektivnější, pokud je dobře řízena.",
+                        "friedman": "Drahé, neefektivní a paternalistické. Úředníci spotřebují polovinu peněz určených pro chudé."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "friedman-4",
+        "title": "Dobrovolnická armáda 1973",
+        "year": 1973,
+        "summary": "Válka ve Vietnamu a odvody (conscription) budí odpor. Armáda je plná demotivovaných branců. Generálové říkají, že bez odvodů to nejde.",
+        "learningGoal": "Tržní cena práce vs. nucená práce (otroctví).",
+        "pyramidEffects": {
+            "workers": 60,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 90
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.5,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-4a",
+                "label": "Zrušit odvody (Profesionální armáda)",
+                "description": "Platit vojákům tržní mzdu, aby přišli dobrovolně. Armáda bude menší, ale kvalitnější.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 0,
+                        "financeCapital": 0,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": -0.3,
+                        "unemployment": -0.01
+                    },
+                    "commentary": {
+                        "marx": "Žoldnéři kapitálu. Chudí budou bojovat za zájmy bohatých za peníze.",
+                        "smith": "Specializace je nutná i ve válčení. Milice nemůže čelit stálé armádě.",
+                        "hayek": "Nucená práce je neslučitelná se svobodnou společností.",
+                        "keynes": "Vytváří to pracovní místa, což je dobré.",
+                        "friedman": "Odvody jsou neopodstatněnou daní uvalenou na mladé muže. Je to forma otroctví. Profesionální armáda je morálnější i efektivnější."
+                    }
+                }
+            },
+            {
+                "id": "choice-4b",
+                "label": "Zachovat brannou povinnost",
+                "description": "Armáda je služba vlasti, ne práce. Udržuje to nízké rozpočtové náklady.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 10,
+                        "financeCapital": 0,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": 0.01,
+                        "classTension": 0.4,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Národ ve zbrani. Může být revoluční, nebo reakční, záleží na vedení.",
+                        "smith": "Občanská milice má své ctnosti, ale moderní válka je složitá.",
+                        "hayek": "Stát má právo žádat oběti v ohrožení, ale v míru je to sporné.",
+                        "keynes": "Levná pracovní síla pro stát, ale skrytá daň pro brance.",
+                        "friedman": "Levná jen zdánlivě. Skutečnou cenu platí branci ztrátou svobody a ušlým výdělkem. Je to plýtvání lidským kapitálem."
+                    }
+                }
+            }
+        ]
+    }
+]

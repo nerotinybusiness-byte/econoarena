@@ -1,0 +1,692 @@
+[
+    {
+        "id": "hayek-1",
+        "title": "Bublina a krach 1929",
+        "year": 1929,
+        "summary": "Po letech levných peněz a úvěrové expanze je trh přehřátý. Ceny akcií jsou odtržené od reality. Najednou přichází panika a trh se hroutí. Centrální banka zvažuje zásah.",
+        "learningGoal": "Pochopení hospodářského cyklu jako důsledku úvěrové expanze a nutnosti korekce (malinvestice).",
+        "pyramidEffects": {
+            "workers": 60,
+            "petitBourgeoisie": 60,
+            "bourgeoisie": 80,
+            "financeCapital": 90,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0.2,
+            "unemployment": 0.03
+        },
+        "choices": [
+            {
+                "id": "choice-1a",
+                "label": "Nechat trh, ať se vyčistí (Laissez-faire)",
+                "description": "Neposkytovat záchranné balíčky. Nechat zkrachovat neefektivní firmy a banky, aby se zdroje uvolnily pro zdravé investice.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -30,
+                        "bourgeoisie": -20,
+                        "financeCapital": -40,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.5,
+                        "unemployment": 0.25
+                    },
+                    "commentary": {
+                        "marx": "Kapitalismus se hroutí sám do sebe. Bída je trestem pro pracující za hříchy spekulantů. Revoluce je na spadnutí.",
+                        "smith": "Neviditelná ruka trhu je krutá, ale spravedlivá. Korekce je nutná, aby se ceny vrátily k přirozené rovnováze.",
+                        "hayek": "Správná volba. Recese je bolestivý, ale nutný návrat k realitě. Jakýkoli pokus o 'záchranu' by jen nafoukl další bublinu a oddálil ozdravný proces."
+                    }
+                }
+            },
+            {
+                "id": "choice-1b",
+                "label": "Zvýšit vládní výdaje a natisknout peníze",
+                "description": "Stát musí zasáhnout, aby zabránil deflaci a masové nezaměstnanosti. Keynesiánský stimul.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 30,
+                        "stateIdeology": 40
+                    },
+                    "indicators": {
+                        "profitRate": 0.08,
+                        "classTension": 0.1,
+                        "unemployment": 0.10
+                    },
+                    "commentary": {
+                        "marx": "Stát se snaží zachránit kapitalisty jejich vlastními penězi (nebo penězi budoucích generací).",
+                        "smith": "Plýtvání veřejnými prostředky. Stát by neměl zasahovat do přirozeného chodu obchodu.",
+                        "hayek": "Katastrofální chyba! Umělé udržování cen a mezd zabrání realokaci zdrojů. Krátkodobě to 'pomůže', ale dlouhodobě to povede ke stagflaci a ztrátě svobody."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-2",
+        "title": "Cesta do otroctví 1935",
+        "year": 1935,
+        "summary": "Krize trvá. Sílí hlasy po centrálním plánování ekonomiky. Vláda chce zavést regulace cen a produkčních kvót, aby 'stabilizovala' hospodářství.",
+        "learningGoal": "Varování, že ekonomická kontrola vede nutně k politické totalitě.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 50,
+            "financeCapital": 40,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.04,
+            "classTension": 0.6,
+            "unemployment": 0.15
+        },
+        "choices": [
+            {
+                "id": "choice-2a",
+                "label": "Zavést centrální plánování průmyslu",
+                "description": "Vláda určí, co se bude vyrábět a za kolik. Konec 'chaosu' trhu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": -40,
+                        "bourgeoisie": -30,
+                        "financeCapital": -50,
+                        "stateIdeology": 50
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.3,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Státní kapitalismus, nebo snad krok k socialismu? Pokud vládnou dělníci, je to dobře. Pokud byrokraté, je to jen jiná forma útlaku.",
+                        "smith": "Vláda není schopna řídit obchod lépe než jednotlivci, kteří sledují svůj vlastní zájem.",
+                        "hayek": "Toto je cesta do otroctví. Kdo kontroluje ekonomické prostředky, kontroluje i cíle lidského života. Centrální plánovač nemá znalosti rozptýlené ve společnosti."
+                    }
+                }
+            },
+            {
+                "id": "choice-2b",
+                "label": "Deregulovat a podpořit svobodný trh",
+                "description": "Zrušit monopoly, snížit daně a nechat cenový systém fungovat jako informační síť.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -5,
+                        "petitBourgeoisie": 30,
+                        "bourgeoisie": 20,
+                        "financeCapital": 20,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.12,
+                        "classTension": 0.4,
+                        "unemployment": 0.10
+                    },
+                    "commentary": {
+                        "marx": "Návrat k dravému kapitalismu. Svoboda pro vlka znamená smrt pro ovce.",
+                        "smith": "Správně. Systém přirozené svobody je nejlepší cestou k prosperitě všech vrstev.",
+                        "hayek": "Jediná cesta ke svobodné společnosti. Trh je spontánní řád, který využívá znalosti všech účastníků lépe než jakýkoli úředník."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-3",
+        "title": "Cenové kontroly 1942",
+        "year": 1942,
+        "summary": "Válka přinesla nedostatek zboží. Vláda chce zabránit inflaci zavedením maximálních cen. Obchody jsou prázdné a vzniká černý trh.",
+        "learningGoal": "Funkce cen jako signálu vzácnosti. Důsledky cenových regulací.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 50,
+            "stateIdeology": 90
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.4,
+            "unemployment": 0.02
+        },
+        "choices": [
+            {
+                "id": "choice-3a",
+                "label": "Zavést přídělový systém",
+                "description": "Lístky na potraviny a benzín. Spravedlivé rozdělení nedostatku řízené státem.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": -10,
+                        "financeCapital": -10,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Válečný komunismus v praxi. Ukazuje, že trh není potřeba pro distribuci zboží, pokud existuje politická vůle.",
+                        "smith": "V čase obležení může být nutné, ale dlouhodobě to ničí motivaci výrobců dodávat zboží na trh.",
+                        "hayek": "Potlačená inflace. Peníze ztrácejí funkci. Lidé tráví čas ve frontách místo prací. Cesta k neefektivitě."
+                    }
+                }
+            },
+            {
+                "id": "choice-3b",
+                "label": "Uvolnit ceny",
+                "description": "Nechat ceny stoupnout. To omezí spotřebu a motivuje k vyšší produkci (nebo dovozu).",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 30,
+                        "financeCapital": 20,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.20,
+                        "classTension": 0.5,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Hyenismus. Bohatí si koupí vše, chudí nic. Trh ve válce je zločin na lidu.",
+                        "smith": "Vysoká cena je nejlepším lékem na nedostatek, protože motivuje k šetrnosti a zvyšování nabídky.",
+                        "hayek": "Cena není nástroj spravedlnosti, ale informace o vzácnosti. Pokud lžeme o ceně (regulací), lžeme o realitě."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-4",
+        "title": "Intelektuálové a socialismus 1945",
+        "year": 1945,
+        "summary": "Válka skončila vítězstvím, ale veřejné mínění se kloní doleva. Univerzity a noviny volají po 'vědeckém řízení společnosti' a sociálním státu.",
+        "learningGoal": "Role intelektuálů (second-hand dealers in ideas) při šíření kolektivismu.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 40,
+            "financeCapital": 30,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.04,
+            "classTension": 0.3,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-4a",
+                "label": "Založit liberální think-tank (Mont Pelerin Society)",
+                "description": "Sdružit intelektuály, kteří obhajují svobodu. Je to běh na dlouhou trať - změnit klima idejí.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -5,
+                        "petitBourgeoisie": 5,
+                        "bourgeoisie": 10,
+                        "financeCapital": 20,
+                        "stateIdeology": -30
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": 0,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Reakční ideologie placená buržoazií na obranu jejich privilegií. Marný boj proti dějinám.",
+                        "smith": "Filosofové a učenci mají vliv, ale nakonec je to 'truck, barter and exchange' co hýbe světem.",
+                        "hayek": "Socialismus není nevyhnutelný, je to intelektuální omyl. Musíme nabídnout atraktivní liberální utopii, abychom získali intelektuály na svou stranu."
+                    }
+                }
+            },
+            {
+                "id": "choice-4b",
+                "label": "Ignorovat intelektuály a dělat byznys",
+                "description": "Teorie nikoho nezajímají, důležité jsou zisky a pragmatická politika dneška.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Praxe bez teorie je slepá, ale kapitál nepotřebuje filosofii, stačí mu policie.",
+                        "smith": "Byznysmeni málokdy rozumí širším souvislostem veřejného blaha.",
+                        "hayek": "Pokud vyklidíme pole idejí, prohrajeme. Politici jsou jen otroky myšlenek nějakého mrtvého ekonoma. Dlouhodobě vládnou ideje, ne zájmy."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-5",
+        "title": "Kalkulační problém 1935",
+        "year": 1935,
+        "summary": "Socialisté tvrdí, že počítače a statistika nahradí trh. Že centrální úřad spočítá ceny lépe než chaotická burza.",
+        "learningGoal": "Nemožnost ekonomické kalkulace v socialismu.",
+        "pyramidEffects": {
+            "workers": 60,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 30,
+            "financeCapital": 20,
+            "stateIdeology": 90
+        },
+        "indicators": {
+            "profitRate": 0,
+            "classTension": 0.4,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-5a",
+                "label": "Oponovat: Znalosti jsou rozptýlené",
+                "description": "Žádný úřad nemůže mít informace o milionech preferencí a lokálních podmínek, které má trh.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": -30
+                    },
+                    "indicators": {
+                        "profitRate": 0,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Trh je jen plýtvání. Racionální plánování eliminuje krize a anarchii.",
+                        "smith": "Člověk systému si myslí, že může hýbat lidmi jako figurkami na šachovnici. Ale lidé mají vlastní princip pohybu.",
+                        "hayek": "Cena není jen číslo, je to kondenzovaná informace. Bez tržních cen nevíme, co je vzácné. Socialismus znamená tápání ve tmě."
+                    }
+                }
+            },
+            {
+                "id": "choice-5b",
+                "label": "Zkusit tržní socialismus",
+                "description": "Státní podniky budou 'hrát' na trh. Manažeři budou simulovat konkurenci.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -20,
+                        "financeCapital": -30,
+                        "stateIdeology": 40
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Kompromis. Důležité je, kdo vlastní výrobní prostředky.",
+                        "smith": "Hra na obchodníky. Pokud nenesou riziko ztráty vlastního majetku, nebudou se chovat odpovědně.",
+                        "hayek": "Bez soukromého vlastnictví neexistuje skutečný trh, jen hra. Manažeři bez rizika krachu budou nezodpovědní."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-6",
+        "title": "Regulace nájemného 1946",
+        "year": 1946,
+        "summary": "Po válce je nedostatek bytů. Lidé se bouří proti vysokým nájmům. Politici navrhují zmrazení cen nájmů.",
+        "learningGoal": "Důsledky cenových stropů (nedostatek, chátrání).",
+        "pyramidEffects": {
+            "workers": 70,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 40,
+            "financeCapital": 30,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.05,
+            "classTension": 0.6,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-6a",
+                "label": "Zmrazit nájmy (Rent Control)",
+                "description": "Byty budou dostupné pro chudé. Majitelé nesmí zdražovat.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 30,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": -30,
+                        "financeCapital": -20,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.2,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Bydlení je právo, ne zboží. Spekulanti s byty jsou paraziti.",
+                        "smith": "Pokud zákon omezí zisk z domů, nikdo nebude stavět nové. Bude jich ještě méně.",
+                        "hayek": "Nejrychlejší způsob, jak zničit město kromě bombardování. Majitelé přestanou opravovat domy a nová výstavba se zastaví."
+                    }
+                }
+            },
+            {
+                "id": "choice-6b",
+                "label": "Nechat tržní nájemné",
+                "description": "Vysoké ceny motivují k rychlé výstavbě nových bytů a šetření místem.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 20,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.10,
+                        "classTension": 0.4,
+                        "unemployment": -0.02
+                    },
+                    "commentary": {
+                        "marx": "Dělníci spí na ulici, zatímco byty jsou prázdné pro bohaté.",
+                        "smith": "Vysoký zisk přiláká kapitál do stavebnictví a konkurence časem ceny srazí.",
+                        "hayek": "Tržní cena alokuje vzácné byty těm, kdo je nejvíc potřebují (a zaplatí), a hlavně motivuje k řešení nedostatku."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-7",
+        "title": "Odbory a nezaměstnanost 1950",
+        "year": 1950,
+        "summary": "Silné odbory si vynutily zvýšení mezd o 20 %. Firmy ale nemohou tolik zaplatit všem a hrozí propouštěním.",
+        "learningGoal": "Vztah mezi mzdami a nezaměstnaností.",
+        "pyramidEffects": {
+            "workers": 80,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 30,
+            "financeCapital": 20,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.02,
+            "classTension": 0.3,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-7a",
+                "label": "Podpořit mzdové požadavky",
+                "description": "Dělníci si zaslouží podíl na zisku. Kupní síla poroste.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": -20,
+                        "financeCapital": -20,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.1,
+                        "unemployment": 0.10
+                    },
+                    "commentary": {
+                        "marx": "Spravedlivý boj. Ale dokud existuje námezdní práce, je to jen přetahovaná o míru vykořisťování.",
+                        "smith": "Vysoké mzdy jsou dobré, ale pokud překročí produktivitu, firma zkrachuje a dělníci přijdou o vše.",
+                        "hayek": "Odbory pomáhají svým členům (insiders) na úkor nezaměstnaných (outsiders). Mzda nad tržní rovnováhou vytváří nezaměstnanost."
+                    }
+                }
+            },
+            {
+                "id": "choice-7b",
+                "label": "Omezit moc odborů",
+                "description": "Zákonem o právu na práci (Right to Work). Mzdy musí odpovídat produktivitě.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 10,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0.4,
+                        "unemployment": -0.03
+                    },
+                    "commentary": {
+                        "marx": "Rozbíjení solidarity dělnické třídy. Stát slouží kapitálu.",
+                        "smith": "Monopol práce je stejně škodlivý jako monopol zboží.",
+                        "hayek": "Flexibilní mzdy jsou nutné pro plnou zaměstnanost. Odborová nátlaková politika je hlavní příčinou trvalé nezaměstnanosti."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-8",
+        "title": "Zlatý standard vs. Fiat 1933",
+        "year": 1933,
+        "summary": "Ekonomika je v deflaci. Vláda chce opustit zlato a tisknout papírové peníze na podporu ekonomiky.",
+        "learningGoal": "Peníze jako uchovatel hodnoty vs. nástroj politiky.",
+        "pyramidEffects": {
+            "workers": 40,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 60,
+            "financeCapital": 80,
+            "stateIdeology": 70
+        },
+        "indicators": {
+            "profitRate": 0.03,
+            "classTension": 0.4,
+            "unemployment": 0.15
+        },
+        "choices": [
+            {
+                "id": "choice-8a",
+                "label": "Opustit zlato a devalvovat",
+                "description": "Zvýší to export a zastaví pád cen. Flexibilní měnová politika.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 10,
+                        "financeCapital": -20,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": 0,
+                        "unemployment": -0.05
+                    },
+                    "commentary": {
+                        "marx": "Peníze jsou jen zprostředkovatel. Manipulace s měnou nemění podstatu krize z nadvýroby.",
+                        "smith": "Peníze by měly mít vnitřní hodnotu. Papírové peníze bez krytí svádí panovníka k nadužívání moci.",
+                        "hayek": "Otevření Pandořiny skříňky. Vláda získá moc nekontrolovaně utrácet. Konec fiskální disciplíny a začátek éry inflace."
+                    }
+                }
+            },
+            {
+                "id": "choice-8b",
+                "label": "Držet se zlata",
+                "description": "Důvěra v měnu je klíčová. Musíme projít očistnou deflací.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": -10,
+                        "financeCapital": 20,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": 0.3,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Kapitalisté obětují společnost na oltář zlatého telete.",
+                        "smith": "Poctivost v placení dluhů je základem obchodu.",
+                        "hayek": "Zlatý standard je pojistka proti zvůli vlád. I když je krátkodobě bolestivý, dlouhodobě zajišťuje svobodu."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-9",
+        "title": "Sociální spravedlnost 1955",
+        "year": 1955,
+        "summary": "Politici slibují 'sociální spravedlnost' - přerozdělení bohatství od úspěšných k potřebným. Zní to hezky, ale vyžaduje to silný státní aparát.",
+        "learningGoal": "Kritika pojmu sociální spravedlnost (Mirage of Social Justice).",
+        "pyramidEffects": {
+            "workers": 60,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 40,
+            "financeCapital": 30,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.08,
+            "classTension": 0.2,
+            "unemployment": 0.03
+        },
+        "choices": [
+            {
+                "id": "choice-9a",
+                "label": "Zavést progresivní zdanění a dávky",
+                "description": "Snížit nerovnost pomocí státní moci.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 20,
+                        "petitBourgeoisie": 0,
+                        "bourgeoisie": -20,
+                        "financeCapital": -20,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": -0.05,
+                        "classTension": -0.3,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Charita v rámci systému. Neřeší příčinu nerovnosti, jen ji maskuje. Skutečná rovnost nastane až zrušením tříd.",
+                        "smith": "Bohatí by měli přispívat více, to je v pořádku. Ale pozor, aby daně neničily motivaci.",
+                        "hayek": "'Sociální spravedlnost' je nesmyslný pojem (atavismus). Ve svobodné společnosti jsou výsledky trhu neúmyslné, tudíž nemohou být spravedlivé ani nespravedlivé. Snaha o ni vede k totalitě."
+                    }
+                }
+            },
+            {
+                "id": "choice-9b",
+                "label": "Trvat pouze na rovnosti před zákonem",
+                "description": "Stát nemá řešit výsledky hry, jen hlídat dodržování pravidel.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Formální rovnost maskuje reálnou nerovnost. Svoboda zemřít hlady.",
+                        "smith": "Každý má mít svobodu sledovat svůj zájem svou cestou, pokud neporušuje zákony spravedlnosti.",
+                        "hayek": "To je podstata liberalismu. Rovnost před zákonem a rovnost výsledků se vzájemně vylučují."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "hayek-10",
+        "title": "Konkurence jako objevný proces 1948",
+        "year": 1948,
+        "summary": "Nová firma přichází s převratnou technologií, která hrozí zničit celé tradiční odvětví a zaměstnanost v něm.",
+        "learningGoal": "Konkurence není o rovnováze, ale o neustálém objevování nového.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 40,
+            "bourgeoisie": 60,
+            "financeCapital": 70,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0.3,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-10a",
+                "label": "Chránit tradiční odvětví",
+                "description": "Zavést regulace nebo cla na ochranu pracovních míst.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 10,
+                        "financeCapital": -10,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Ochrana včerejška. Kapitalismus je revoluční a neustále mění výrobní prostředky. Konzervace je marná.",
+                        "smith": "Bránit pokroku je poškozování spotřebitelů ve prospěch výrobců.",
+                        "hayek": "Konkurence je procedura k objevování faktů, které by bez ní zůstaly neznámé. Pokud ji zastavíme, zastavíme pokrok. Musíme přijmout změnu."
+                    }
+                }
+            },
+            {
+                "id": "choice-10b",
+                "label": "Nechat proběhnout kreativní destrukci",
+                "description": "Staré musí ustoupit novému a efektivnějšímu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -30,
+                        "bourgeoisie": 20,
+                        "financeCapital": 30,
+                        "stateIdeology": -10
+                    },
+                    "indicators": {
+                        "profitRate": 0.15,
+                        "classTension": 0.4,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Vše stálé se vypařuje. Kapitalismus revolucionalizuje svět, ale vytváří nové rozpory.",
+                        "smith": "Spotřebitel získá levnější a lepší zboží. To je účel veškeré výroby.",
+                        "hayek": "Nelze vědět dopředu, co je 'efektivní'. To ukáže až soutěž. Musíme se přizpůsobit neznámému."
+                    }
+                }
+            }
+        ]
+    }
+]

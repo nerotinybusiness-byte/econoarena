@@ -1,0 +1,294 @@
+[
+    {
+        "id": "keynes-1",
+        "title": "Obecná teorie 1936",
+        "year": 1936,
+        "summary": "Hospodářská krize se prohlubuje, soukromé investice zamrzly. Továrny stojí, lidé nemají práci ani peníze na útratu. Klasická ekonomie říká 'počkejte, až klesnou mzdy', ale to se neděje.",
+        "learningGoal": "Pochopení role agregátní poptávky a multiplikačního efektu.",
+        "pyramidEffects": {
+            "workers": 20,
+            "petitBourgeoisie": 30,
+            "bourgeoisie": 40,
+            "financeCapital": 60,
+            "stateIdeology": 50
+        },
+        "indicators": {
+            "profitRate": 0.02,
+            "classTension": 0.7,
+            "unemployment": 0.25
+        },
+        "choices": [
+            {
+                "id": "choice-1a",
+                "label": "Deficitní utrácení (Státní stimul)",
+                "description": "Vláda si půjčí a investuje do ekonomiky, aby nahradila výpadek soukromé poptávky. Nastartuje to kola byznysu.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 30,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 20,
+                        "financeCapital": 0,
+                        "stateIdeology": 20
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.2,
+                        "unemployment": -0.10
+                    },
+                    "commentary": {
+                        "marx": "Stát zachraňuje kapitalismus před kolapsem. Dluhy zaplatí nakonec dělníci daněmi.",
+                        "smith": "Dluhy ničí národ stejně jako rodinu. Vláda by měla být šetrná.",
+                        "hayek": "Vytloukání klínu klínem. Umělá poptávka jen oddálí nutnou restrukturalizaci a způsobí inflaci.",
+                        "keynes": "V době recese je spořivost hříchem. Stát musí utrácet, aby lidé měli příjmy. O rozpočet se starejme v časech boomu.",
+                        "friedman": "Fiskální politika je pomalá a neúčinná. Lepší by bylo, kdyby Fed zvýšil peněžní zásobu."
+                    }
+                }
+            },
+            {
+                "id": "choice-1b",
+                "label": "Vyrovnaný rozpočet (Austerity)",
+                "description": "Šetřit, snížit platy státních zaměstnanců a nechat trh, ať se uzdraví sám.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": 0.3,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Kapitál řeší krizi na úkor mas. Bída se prohlubuje.",
+                        "smith": "Rozumné hospodaření. Co je ctností v rodině, nemůže být chybou v království.",
+                        "hayek": "Krátkodobá bolest pro dlouhodobé zdraví. Trh se musí vyčistit od chyb.",
+                        "keynes": "Šílenství! Když všichni šetří, nikdo nenakupuje a příjmy všech klesají. Paradox úspor nás zničí.",
+                        "friedman": "Vláda jen zhoršuje situaci,  když se snaží 'řídit' ekonomiku, ale škrty v recesi jsou též nebezpečné (kvůli deflaci)."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "keynes-2",
+        "title": "Paradox úspor 1932",
+        "year": 1932,
+        "summary": "Lidé se bojí budoucnosti, a tak šetří každou penci. Banky mají peníze, ale nikdo si nepůjčuje (past likvidity). Spotřeba padá.",
+        "learningGoal": "Proč individuální racionální chování (spoření) může vést ke kolektivní katastrofě.",
+        "pyramidEffects": {
+            "workers": 30,
+            "petitBourgeoisie": 20,
+            "bourgeoisie": 30,
+            "financeCapital": 80,
+            "stateIdeology": 40
+        },
+        "indicators": {
+            "profitRate": 0.01,
+            "classTension": 0.5,
+            "unemployment": 0.20
+        },
+        "choices": [
+            {
+                "id": "choice-2a",
+                "label": "Snížit úrokové sazby na nulu",
+                "description": "Zlevnit peníze, aby se vyplatilo investovat a ne je držet pod polštářem.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 5,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 15,
+                        "financeCapital": -20,
+                        "stateIdeology": 10
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": -0.05,
+                        "unemployment": -0.02
+                    },
+                    "commentary": {
+                        "marx": "Peníze ztrácejí hodnotu, kapitalisté hledají zisk ve spekulacích.",
+                        "smith": "Nízký úrok pomáhá obchodu, ale nesmí být umělý.",
+                        "hayek": "Uměle nízké sazby vedou k malinvesticím. Lidé investují do projektů, které nejsou skutečně rentabilní.",
+                        "keynes": "Může to pomoci, ale v hluboké depresi to nestačí (past likvidity). Ani zadarmo si nikdo nepůjčí, když nevidí odbyt.",
+                        "friedman": "Měnová expanze je klíčová. Fed by měl nakupovat dluhopisy a pumpovat peníze."
+                    }
+                }
+            },
+            {
+                "id": "choice-2b",
+                "label": "Veřejné investice 'Hladová zeď'",
+                "description": "Stát musí investovat přímo, když to soukromníci nedělají. Třeba i stavět pyramidy, hlavně ať peníze obíhají.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 40,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 10,
+                        "financeCapital": -5,
+                        "stateIdeology": 30
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.2,
+                        "unemployment": -0.15
+                    },
+                    "commentary": {
+                        "marx": "Práce pro práci. Odcizení. Ale aspoň dělníci nehladoví.",
+                        "smith": "Nejlepší je nechat peníze v kapsách lidí, oni vědí, co koupit.",
+                        "hayek": "Plýtvání zdroji. Tyto projekty po skončení stimulace zkrachují.",
+                        "keynes": "Ano! I kopání jam a jejich zasypávání je lepší než nic, protože to dává lidem mzdu, kterou utratí u pekaře.",
+                        "friedman": "Vládní výdaje vytěsňují soukromé investice (Crowding out). Lepší jsou nízké daně."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "keynes-3",
+        "title": "Bretton Woods 1944",
+        "year": 1944,
+        "summary": "Světová válka končí. Je třeba nastavit nový mezinárodní finanční řád, aby se neopakovala velká krize a obchodní války.",
+        "learningGoal": "Globální finanční architektura a stabilita měn.",
+        "pyramidEffects": {
+            "workers": 50,
+            "petitBourgeoisie": 50,
+            "bourgeoisie": 70,
+            "financeCapital": 90,
+            "stateIdeology": 80
+        },
+        "indicators": {
+            "profitRate": 0.10,
+            "classTension": 0.1,
+            "unemployment": 0.05
+        },
+        "choices": [
+            {
+                "id": "choice-3a",
+                "label": "Založit MMF a Světovou banku (Řízené kurzy)",
+                "description": "Pevné kurzy vázané na dolar/zlato, ale s možností úprav. Mezinárodní dohled nad nerovnováhami.",
+                "effects": {
+                    "pyramid": {
+                        "workers": 10,
+                        "petitBourgeoisie": 10,
+                        "bourgeoisie": 20,
+                        "financeCapital": 30,
+                        "stateIdeology": 40
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.1,
+                        "unemployment": 0
+                    },
+                    "commentary": {
+                        "marx": "Nástroj amerického imperialismu k ovládnutí světových trhů.",
+                        "smith": "Obchod potřebuje stabilitu měny, to je rozumné.",
+                        "hayek": "Mezinárodní byrokracie je nebezpečná. Ale pevné kurzy disciplinují vlády.",
+                        "keynes": "Chtěl jsem globální měnu (Bancor), aby věřitelé i dlužníci nesli odpovědnost. Toto je kompromis, ale přinese stabilitu.",
+                        "friedman": "Pevné kurzy jsou chybou. Trh (plovoucí kurzy) by měl určovat hodnotu měn, ne úředníci."
+                    }
+                }
+            },
+            {
+                "id": "choice-3b",
+                "label": "Návrat k čistému zlatému standardu",
+                "description": "Žádné mezinárodní instituce. Měny mají pevný obsah zlata. Automatické vyrovnávání.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -20,
+                        "petitBourgeoisie": -10,
+                        "bourgeoisie": 0,
+                        "financeCapital": 10,
+                        "stateIdeology": -20
+                    },
+                    "indicators": {
+                        "profitRate": -0.02,
+                        "classTension": 0.2,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Zlatá klec pro národy.",
+                        "smith": "Osvědčený systém, který brání vládcům kazit minci.",
+                        "hayek": "Zlato je pojistka svobody. Zabraňuje inflaci.",
+                        "keynes": "Zlatý standard je 'barbarský relikt'. V moderní době potřebujeme flexibilitu pro řízení zaměstnanosti.",
+                        "friedman": "Zlato je plýtvání zdroji (kopat ho ze země a dávat do trezoru). Fiat peníze s pravidly jsou efektivnější."
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "id": "keynes-4",
+        "title": "Veřejné práce 1933",
+        "year": 1933,
+        "summary": "Nezaměstnanost je 25 %. Soukromý sektor se bojí riskovat. Vláda zvažuje masivní program výstavby přehrad, silnic a škol.",
+        "learningGoal": "Role státu jako investora poslední instance.",
+        "pyramidEffects": {
+            "workers": 10,
+            "petitBourgeoisie": 20,
+            "bourgeoisie": 40,
+            "financeCapital": 30,
+            "stateIdeology": 60
+        },
+        "indicators": {
+            "profitRate": 0.01,
+            "classTension": 0.6,
+            "unemployment": 0.25
+        },
+        "choices": [
+            {
+                "id": "choice-4a",
+                "label": "Spustit New Deal",
+                "description": "Masivní státní zakázky. Zaměstnat lidi přímo státem (WPA, CCC).",
+                "effects": {
+                    "pyramid": {
+                        "workers": 40,
+                        "petitBourgeoisie": 20,
+                        "bourgeoisie": 20,
+                        "financeCapital": -10,
+                        "stateIdeology": 50
+                    },
+                    "indicators": {
+                        "profitRate": 0.05,
+                        "classTension": -0.3,
+                        "unemployment": -0.15
+                    },
+                    "commentary": {
+                        "marx": "Stát zachraňuje systém před revolucí drobnými ústupky. Ale přehrady se hodí.",
+                        "smith": "Stát by měl stavět infrastrukturu, ale neměl by konkurovat soukromníkům.",
+                        "hayek": "Vede to k závislosti lidí na státu a růstu byrokracie. Cesta do otroctví.",
+                        "keynes": "Přesně tak! Vláda musí být motorem, když soukromý motor zhasl. Multiplikátor roznese bohatství dál.",
+                        "friedman": "Tyto programy jsou neefektivní. Trvají dlouho, než se rozjedou, a často končí, když už krize pominula."
+                    }
+                }
+            },
+            {
+                "id": "choice-4b",
+                "label": "Nechat trh najít dno",
+                "description": "Nezasahovat. Mzdy klesnou, až se vyplatí někoho zaměstnat.",
+                "effects": {
+                    "pyramid": {
+                        "workers": -30,
+                        "petitBourgeoisie": -20,
+                        "bourgeoisie": 10,
+                        "financeCapital": 10,
+                        "stateIdeology": -30
+                    },
+                    "indicators": {
+                        "profitRate": 0.02,
+                        "classTension": 0.5,
+                        "unemployment": 0.05
+                    },
+                    "commentary": {
+                        "marx": "Nelidskost kapitálu v plné nahotě.",
+                        "smith": "Přirozená cena práce se ustálí.",
+                        "hayek": "Rychlá adaptace je lepší než prodlužování agónie dotacemi.",
+                        "keynes": "Z dlouhodobého hlediska jsme všichni mrtví. Čekat na 'přirozené vyrovnání' znamená odsoudit generaci k bídě.",
+                        "friedman": "Mzdy jsou nepružné směrem dolů. Monetární stimulace by byla lepší než byrokratické stavby."
+                    }
+                }
+            }
+        ]
+    }
+]
